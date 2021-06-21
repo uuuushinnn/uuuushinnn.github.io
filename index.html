@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title>災厄的期末作業</title>
+		<meta charset="utf-8">
 	</head>
 	<body bgcolor="pink">
 		<div>
@@ -123,19 +124,8 @@
 			</iframe>
 		</div>
 		
-		<button type="button" onclick="question()">打你的名字</button>
-		<p id="name">你是三小名</p>
-		function question(){
-				var msg;
-				var user_name=prompt("請輸入你的名字:","123");
-				if (user_name==null||user_name==""){
-					msg="輸入無效";
-				}else{
-					msg="HI "+user_name+",你好";
-				}
-				
-				
-				document.getElementById("name").innerHTML=msg;
+		<p id="datetime">時間</p>
+		<button type="button" onclick="change()">change mode</button>
 }
 	</body>
 </html>
