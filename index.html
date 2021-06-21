@@ -7,7 +7,6 @@
 		<div>
 			<h3>期末作業 <b>好麻煩</b></h3>
 			<p>期末作業 <b>根本是在搞我</b></p>
-			
 			<p style="background-color:gray;color:yellow">hello <span style="background-color:black;color:white">fucking </span>world</p>
 			<br>
 			<hr color="red" size="20">
@@ -123,5 +122,20 @@
 			<iframe src="./iframe_c.html" name="iframe_c" width="100%" height="250">
 			</iframe>
 		</div>
+		
+		<button type="button" onclick="question()">打你的名字</button>
+		<p id="name">你是三小名</p>
+		function question(){
+				var msg;
+				var user_name=prompt("請輸入你的名字:","123");
+				if (user_name==null||user_name==""){
+					msg="輸入無效";
+				}else{
+					msg="HI "+user_name+",你好";
+				}
+				
+				
+				document.getElementById("name").innerHTML=msg;
+}
 	</body>
 </html>
